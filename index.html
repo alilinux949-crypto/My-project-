@@ -12,8 +12,21 @@
             padding: 0;
         }
         .header {
-            padding-top: 80px;
+            padding-top: 60px;
             padding-bottom: 40px;
+        }
+        .main-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
         h1 { font-size: 40px; margin: 10px; }
         p { font-size: 18px; }
@@ -59,10 +72,24 @@
             text-decoration: none;
             font-weight: bold;
         }
+        .client {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .client-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <div class="header">
+        <img src="profile.jpg" class="main-image" alt="Ali Photo">
+        <div class="logo">Ali Dev</div>
         <h1>Hi, I'm Ali - Web Developer</h1>
         <p>I build responsive websites with HTML, CSS | GitHub Pages 🚀</p>
     </div>
@@ -94,7 +121,6 @@
         <a href="https://wa.me/923056603988" class="btn" target="_blank">Order on WhatsApp</a>
     </div>
 
-    <!-- NEW: Portfolio Section -->
     <div class="section">
         <h2>📂 My Work / Portfolio</h2>
         <p><b>1. Business Website Demo</b> - Responsive website for local shop</p>
@@ -112,10 +138,23 @@
         <p>Fast Delivery in 2 Days | 100% Responsive | Made in Multan, Pakistan ❤️</p>
     </div>
 
-    <!-- NEW: Testimonial Section -->
+    <!-- NEW: Client Section with Photos -->
     <div class="section">
-        <h2>⭐ Client Review</h2>
-        <p>"Great work! He made my website in 2 days. Highly recommended." <br>- Ahmed, Multan</p>
+        <h2>⭐ What Clients Say</h2>
+        <div class="client">
+            <img src="https://via.placeholder.com/60" class="client-img" alt="Client 1">
+            <div>
+                <p><b>Ahmed - Multan</b></p>
+                <p>"Great work! He made my website in 2 days. Highly recommended."</p>
+            </div>
+        </div>
+        <div class="client">
+            <img src="https://via.placeholder.com/60" class="client-img" alt="Client 2">
+            <div>
+                <p><b>Sara - Lahore</b></p>
+                <p>"Very professional and fast delivery. 5 stars!"</p>
+            </div>
+        </div>
     </div>
 
     <div class="section">
